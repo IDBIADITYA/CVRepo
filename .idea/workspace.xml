@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="249ed67f-9fdd-4a77-9423-cbeae07192e2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jubliant_cvsearch.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JD_Sample/python_dev_1.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sample_CVs/sample_1.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sample_CVs/sample_1.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sample_CVs/sample_10.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sample_CVs/sample_11.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sample_CVs/sample_12.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sample_CVs/sample_13.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sample_CVs/sample_2.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sample_CVs/sample_2.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sample_CVs/sample_3.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sample_CVs/sample_3.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sample_CVs/sample_4.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sample_CVs/sample_4.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sample_CVs/sample_5.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sample_CVs/sample_5.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sample_CVs/sample_6.doc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sample_CVs/sample_6.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sample_CVs/sample_6.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sample_CVs/sample_7.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sample_CVs/sample_7.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sample_CVs/sample_8.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sample_CVs/sample_8.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sample_CVs/sample_9.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classifier.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db_utility/applicants.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db_utility/connect.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db_utility/queries.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db_utility/queries.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db_utility/tes_db.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/error.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/error_sparse.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oracle_install.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/responses.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/Head Quality.rar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/Head-Quality/A_V_Jayakumar.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/Head-Quality/A_V_Sriram.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/Head-Quality/Ashwini_Kumar_Srivastava__17072019.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/Head-Quality/BS_Grover_Alkem_92lacs.doc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/Head-Quality/Dr._Vaishali_Bhandary.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/Head-Quality/Gopal Srivastava.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/Head-Quality/Gopi_Reddy__23yrs_Granules_India_Ltd.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/Head-Quality/K R Prakash UPDATED.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/Head-Quality/K._Nagendra_Babu.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/Head-Quality/Madan_mohan_rao_E_biological_82lacs.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/Head-Quality/Manjunath_hetero_drugs.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/Head-Quality/Mohandoss Thammanna.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/Head-Quality/Navin Agrawal_sun pharma.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/Head-Quality/Panjatcharam M.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/Head-Quality/Rajeev_paliwal.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/Head-Quality/Rajeshwar_devulapali__USV_LTD_18CR.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/Head-Quality/Shabbir Malik.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/Head-Quality/Shri Prakash Singh.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/Head-Quality/Sunil Deshmukh CV 28th Feb 2019.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/Head-Quality/Sunilraj Othena.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/Head-Quality/Suveer_Srivastava.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/Head-Quality/Tapan Das.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/Head-Quality/Vishal_Arora.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/JD &amp; Shortlisted resume(Head Quality)/A_V_Jayakumar.doc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/JD &amp; Shortlisted resume(Head Quality)/JD Head-Quality (Generics).docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/JD &amp; Shortlisted resume(Head Quality)/Shabbir Malik.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/JD &amp; Shortlisted resume(Head Quality)/Shri Prakash Singh.doc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/JD &amp; Shortlisted resume(Head Quality)/Sunilraj Othena.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/JD &amp; Sortlisted Resume (Manager_Design_n_Engineering)/.~lock.Manish Tiwari.docx#" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/JD &amp; Sortlisted Resume (Manager_Design_n_Engineering)/Abhinav Mishra.doc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/JD &amp; Sortlisted Resume (Manager_Design_n_Engineering)/Abhinav Mishra.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/JD &amp; Sortlisted Resume (Manager_Design_n_Engineering)/Devdatta Deshpande.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/JD &amp; Sortlisted Resume (Manager_Design_n_Engineering)/JD D&amp;E.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/JD &amp; Sortlisted Resume (Manager_Design_n_Engineering)/Kapil Dudela.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/JD &amp; Sortlisted Resume (Manager_Design_n_Engineering)/Khushboo Rani.doc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/JD &amp; Sortlisted Resume (Manager_Design_n_Engineering)/Khushboo Rani.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/JD &amp; Sortlisted Resume (Manager_Design_n_Engineering)/Manish Tiwari.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/JD &amp; Sortlisted Resume.rar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/JD_Head-Quality_Generics.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/JD_for_ps_developer.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/JD_for_psadmin.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/Manager - Design &amp; Engineering ( Greater Noida ).rar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/Manager_Design_n_Engineering.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/Manager_Design_n_Engineering/.~lock.Khushboo Rani.docx#" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/Manager_Design_n_Engineering/ANUPAMRANJANDUBEY_8407893_-13_00-_1.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/Manager_Design_n_Engineering/Abhinav Mishra.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/Manager_Design_n_Engineering/AbhishekRamakrishna_8413517_-08_00-_1.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/Manager_Design_n_Engineering/AbhishekSingh_8408421_-11_00-_1.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/Manager_Design_n_Engineering/AjayMann_8412275_-12_00-_1.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/Manager_Design_n_Engineering/AnilKumarGoyal_8405259_-11_00-_1.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/Manager_Design_n_Engineering/AnujKumar_8406987_-10_00-_1.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/Manager_Design_n_Engineering/AnuranjanKumar_8405725_-07_00-_1.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/Manager_Design_n_Engineering/ArghyapratimHaldar_8403147_-11_00-_1.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/Manager_Design_n_Engineering/AvijeetPSuryavanshi_8412013_-09_00-_1.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/Manager_Design_n_Engineering/AviranjanKumar_8409155_-12_00-_1.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/Manager_Design_n_Engineering/DEVENDRASINGHCHOHAN_8410101_-07_00-_1.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/Manager_Design_n_Engineering/Devdatta Deshpande.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/Manager_Design_n_Engineering/DharmendraKumar_8404405_-14_00-_1.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/Manager_Design_n_Engineering/DheerendraSinghSikarwar_8407023_-07_00-_1.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/Manager_Design_n_Engineering/DineshVaishnav_8407295_-07_00-_1.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/Manager_Design_n_Engineering/DnyaneshwarRajput_8413563_-11_00-_1.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/Manager_Design_n_Engineering/GauravKumarGupta_8407153_-11_00-_1.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/Manager_Design_n_Engineering/IQBALHOSSAIN_8402381_-14_00-_1.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/Manager_Design_n_Engineering/Kapil Dudela.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/Manager_Design_n_Engineering/Khushboo Rani.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/Manager_Design_n_Engineering/Manish Tiwari.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/Manager_Design_n_Engineering/ManishJain_8407469_-09_00-_1.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/Manager_Design_n_Engineering/MohanKashid_8399187_-12_00-_1.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/Manager_Design_n_Engineering/NAYEEMLIYAQUAT_8412603_-09_00-_1.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/Manager_Design_n_Engineering/NayanKumarBehera_8401469_-09_00-_1.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/Manager_Design_n_Engineering/NeerajPrasad_8408243_-07_00-_1.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/Manager_Design_n_Engineering/NehaTyagi_8409607_-08_00-_1.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/Manager_Design_n_Engineering/NileshKumarSingh_8408119_-16_00-_1.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/Manager_Design_n_Engineering/PankajKumarSingh_8404851_-10_00-_1.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/Manager_Design_n_Engineering/RAJANSINGH_8405941_-09_00-_1.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/Manager_Design_n_Engineering/RajeshMohapatra_8403523_-10_00-_1.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/Manager_Design_n_Engineering/S.Saptharishi_8406469_-15_00-_1.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/Manager_Design_n_Engineering/SHAIKKHADARMOHIDDIN_8399015_-14_00-_1.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/Manager_Design_n_Engineering/SaswatSatpathy_8413317_-07_00-_1.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/Manager_Design_n_Engineering/SubhamDutta_8407915_-11_00-_1.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/Manager_Design_n_Engineering/TARUNKRISHANJINDAL_8403345_-07_00-_1.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/Manager_Design_n_Engineering/TanveerChaudhary_8413001_-11_00-_1.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/Manager_Design_n_Engineering/Vinay Kumar Gupta.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/Manager_Design_n_Engineering/Vinod Rawat.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/PSADMIN.ZIP" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/PSADMIN/1584194476219_Resume_2.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/PSADMIN/AbhisekKumarSingh_8782976_-05_03-_1.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/PSADMIN/AkshayChikara_8629525_-03_05-_1.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/PSADMIN/Anil_Kumar.doc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/PSADMIN/AnimeshSiddharth[4_0].pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/PSADMIN/AnkitJoshi_8790468_-05_00-_1.doc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/PSADMIN/Ashish_Angural_PeopleSoft_Admin.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/PSADMIN/BhawnaMoolchandani_8614019_-06_00-_1.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/PSADMIN/KumarUtkarsh_8620951_-03_06-_1.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/PSADMIN/Kumar_Rohan (1).docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/PSADMIN/MandeepSharma[6_0].doc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/PSADMIN/Manish_Chintakindi_PeopleSoft_Administrator[10732].docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/PSADMIN/Mayank_Malhotra.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/PSADMIN/Megha_Singh.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/PSADMIN/MohammadZeeshan_8607153_-04_01-_1.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/PSADMIN/Mohammad_Shareef_Khan.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/PSADMIN/Neeru__Sharma__PEOPLESOFT_DBA4_finall.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/PSADMIN/Nitin_Patil.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/PSADMIN/PoojaPanwar[5_7]_(1).docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/PSADMIN/Pradeep_Singh_Khatri.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/PSADMIN/PrakashChandra[7_0].doc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/PSADMIN/Pranay_Agrawal.doc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/PSADMIN/Priyanshu_Dubey.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/PSADMIN/RAVI_SHANKAR.doc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/PSADMIN/Ravi_Kumar.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/PSADMIN/Resume (14).docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/PSADMIN/ResumePS.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/PSADMIN/Resume_Anand_Diploma_Chem.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/PSADMIN/Rishabh_Goel.doc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/PSADMIN/RohitSinha_8612249_-10_00-_1.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/PSADMIN/ShabnamBano[5_11].doc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/PSADMIN/ShivanKumarJha[3_11].docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/PSADMIN/Shweta_Yadav.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/PSADMIN/SunnyPoddar_8717575_-03_06-_1.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/PSADMIN/VIBHAS_AHUJA.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/PSADMIN/resume (6).doc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/PSDEVELOPER.ZIP" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/PSDEVELOPER/1554651815289_navin5.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/PSDEVELOPER/Abhishek_Arora_Resume.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/PSDEVELOPER/Bikash_Ratna_Tripathy_01.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/PSDEVELOPER/Dishant_Tomar.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/PSDEVELOPER/KrishanKSingh.doc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/PSDEVELOPER/Mayank_Sunny_CV.doc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/PSDEVELOPER/USM_Kuldeep_Sati_Resume_18022K191.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/PSDEVELOPER/avinash_Sablani.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/PSDEVELOPER/manojcv.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/PSDEVELOPER/resume (1).pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/PSDEVELOPER/resume (10).doc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/PSDEVELOPER/resume (11).doc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/PSDEVELOPER/resume (12).doc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/PSDEVELOPER/resume (13).doc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/PSDEVELOPER/resume (14).docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/PSDEVELOPER/resume (15).docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/PSDEVELOPER/resume (16).docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/PSDEVELOPER/resume (17).docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/PSDEVELOPER/resume (18).docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/PSDEVELOPER/resume (19).docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/PSDEVELOPER/resume (2).pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/PSDEVELOPER/resume (20).docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/PSDEVELOPER/resume (21).docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/PSDEVELOPER/resume (22).docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/PSDEVELOPER/resume (23).docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/PSDEVELOPER/resume (24).docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/PSDEVELOPER/resume (25).docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/PSDEVELOPER/resume (26).docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/PSDEVELOPER/resume (27).docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/PSDEVELOPER/resume (28).docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/PSDEVELOPER/resume (3).pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/PSDEVELOPER/resume (4).pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/PSDEVELOPER/resume (6).doc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/PSDEVELOPER/resume (7).doc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/PSDEVELOPER/resume (8).doc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/PSDEVELOPER/resume (9).doc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/PSDEVELOPER/resume.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/temp/Abhinav Mishra.doc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/temp/AmarpreetSingh_8405313_-10_00-_1.doc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/temp/B.PoornaChandraRaju_8405419_-10_00-_1.doc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/temp/ChilukuriVSNagaPrasad_8402687_-10_00-_1.doc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/temp/Girishbabu.M_8413433_-11_00-_1.doc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/temp/HridayKumarJha_8406375_-08_00-_1.doc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/temp/Khushboo Rani.doc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/temp/MangeshNanasahebShinde_8411199_-13_00-_1.doc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/temp/Mohd.ImranKhan_8408969_-14_00-_1.doc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/temp/NirupamaSarmah_8406157_-09_00-_1.doc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/temp/Pavan_8408133_-12_00-_1.doc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/temp/ROHITKumarShrivastava_8401707_-13_00-_1.doc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/temp/Raghavendra Mishra.doc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/temp/RajuKumar_8408747_-10_00-_1.doc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/temp/RishiKumarSharma_8405445_-14_00-_1.doc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/temp/RonakSingh_8403455_-12_00-_1.doc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/temp/SanchitBhatnagar_8411195_-12_00-_1.doc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/temp/SanjayKumarJha_8405241_-12_00-_1.doc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/temp/ShaileshUmap_8407545_-11_00-_1.doc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/temp/UmarAhmedKhan_8404269_-13_00-_1.doc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/temp/VarunMangla_8411843_-12_00-_1.doc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/temp/Vinod Meshram.doc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_jll/temp/VinodMeshram_8402981_-11_00-_1.doc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp_main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/util/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/util/classifier.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/util/classifier_2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/util/corpus.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/util/cosine_simi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/util/helper.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/util/preprocessing.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/util/removable.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/util/resume_parser.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/util/scores.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProjectId" id="1p9Rp9OM30qSKDd9pUOqVbhjmgW" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Flask-Resume-Parser-SpaCy-master" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Sample_CVs" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/util" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.temp_main">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python">
+      <module name="jubliant_cvsearch" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$PROJECT_DIR$/venv/bin/python3" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="net.ashald.envfile">
+        <option name="IS_ENABLED" value="false" />
+        <option name="IS_SUBST" value="false" />
+        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+        <option name="IS_IGNORE_MISSING_FILES" value="false" />
+        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+        <ENTRIES>
+          <ENTRY IS_ENABLED="true" PARSER="runconfig" />
+        </ENTRIES>
+      </EXTENSION>
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="temp_main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="jubliant_cvsearch" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/temp_main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.temp_main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="249ed67f-9fdd-4a77-9423-cbeae07192e2" name="Default Changelist" comment="" />
+      <created>1614593499746</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1614593499746</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/util/classifier.py</url>
+          <line>75</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/util/classifier.py</url>
+          <line>83</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/util/classifier.py</url>
+          <line>90</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/main.py</url>
+          <line>34</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/util/classifier.py</url>
+          <line>92</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/util/classifier.py</url>
+          <line>86</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

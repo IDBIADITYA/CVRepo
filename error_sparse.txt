@@ -1,0 +1,171 @@
+ ERROR: Command errored out with exit status 1:
+     command: /usr/bin/python3 -u -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'/tmp/pip-install-ta_k8wa_/sparse-dot-topn_a24b0d2585234bccbb602603d716d1f2/setup.py'"'"'; __file__='"'"'/tmp/pip-install-ta_k8wa_/sparse-dot-topn_a24b0d2585234bccbb602603d716d1f2/setup.py'"'"';f=getattr(tokenize, '"'"'open'"'"', open)(__file__);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' install --record /tmp/pip-record-jw07kyg0/install-record.txt --single-version-externally-managed --user --prefix= --compile --install-headers /home/v-salman.akhatar@JUBLCORP.COM/.local/include/python3.6m/sparse-dot-topn
+         cwd: /tmp/pip-install-ta_k8wa_/sparse-dot-topn_a24b0d2585234bccbb602603d716d1f2/
+    Complete output (20 lines):
+    running install
+    running build
+    running build_py
+    creating build
+    creating build/lib.linux-x86_64-3.6
+    creating build/lib.linux-x86_64-3.6/sparse_dot_topn
+    copying sparse_dot_topn/__init__.py -> build/lib.linux-x86_64-3.6/sparse_dot_topn
+    copying sparse_dot_topn/awesome_cossim_topn.py -> build/lib.linux-x86_64-3.6/sparse_dot_topn
+    running build_ext
+    skipping './sparse_dot_topn/sparse_dot_topn.cpp' Cython extension (up-to-date)
+    skipping './sparse_dot_topn/sparse_dot_topn_threaded.cpp' Cython extension (up-to-date)
+    building 'sparse_dot_topn.sparse_dot_topn' extension
+    creating build/temp.linux-x86_64-3.6
+    creating build/temp.linux-x86_64-3.6/sparse_dot_topn
+    gcc -pthread -Wno-unused-result -Wsign-compare -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -I/usr/include/python3.6m -I/home/v-salman.akhatar@JUBLCORP.COM/.local/lib/python3.6/site-packages/numpy/core/include -c ./sparse_dot_topn/sparse_dot_topn.cpp -o build/temp.linux-x86_64-3.6/./sparse_dot_topn/sparse_dot_topn.o -std=c++0x -pthread -O3
+    ./sparse_dot_topn/sparse_dot_topn.cpp:32:20: fatal error: Python.h: No such file or directory
+     #include "Python.h"
+                        ^
+    compilation terminated.
+    error: command 'gcc' failed with exit status 1
+    ----------------------------------------
+ERROR: Command errored out with exit status 1: /usr/bin/python3 -u -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'/tmp/pip-install-ta_k8wa_/sparse-dot-topn_a24b0d2585234bccbb602603d716d1f2/setup.py'"'"'; __file__='"'"'/tmp/pip-install-ta_k8wa_/sparse-dot-topn_a24b0d2585234bccbb602603d716d1f2/setup.py'"'"';f=getattr(tokenize, '"'"'open'"'"', open)(__file__);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' install --record /tmp/pip-record-jw07kyg0/install-record.txt --single-version-externally-managed --user --prefix= --compile --install-headers /home/v-salman.akhatar@JUBLCORP.COM/.local/include/python3.6m/sparse-dot-topn Check the logs for full command output.
+
+
+
+
+
+
+
+
+5.10.1. Installation of GCC
+Versions of GCC later than 4.3 will treat this build as if it were a relocated compiler and disallow searching for startfiles in the location specified by --prefix. Since this will not be a relocated compiler, and the startfiles in /tools are crucial to building a working compiler linked to the libs in /tools, apply the following patch which partially reverts GCC to its old behavior:
+
+patch -Np1 -i ../gcc-4.5.3-startfiles_fix-1.patch
+Under normal circumstances the GCC fixincludes script is run in order to fix potentially broken header files. As GCC-4.5.3 and Glibc-2.12.2 have already been installed at this point, and their respective header files are known to not require fixing, the fixincludes script is not required. In fact, running this script may actually pollute the build environment by installing fixed headers from the host system into GCC's private include directory. The running of the fixincludes script can be suppressed by issuing the following commands:
+
+cp -v gcc/Makefile.in{,.orig}
+sed 's@\./fixinc\.sh@-c true@' gcc/Makefile.in.orig > gcc/Makefile.in
+For x86 machines, a bootstrap build of GCC uses the -fomit-frame-pointer compiler flag. Non-bootstrap builds omit this flag by default, and the goal should be to produce a compiler that is exactly the same as if it were bootstrapped. Apply the following sed command to force the build to use the flag:
+
+cp -v gcc/Makefile.in{,.tmp}
+sed 's/^T_CFLAGS =$/& -fomit-frame-pointer/' gcc/Makefile.in.tmp \
+  > gcc/Makefile.in
+The following command will change the location of GCC's default dynamic linker to use the one installed in /tools. It also removes /usr/include from GCC's include search path. Doing this now rather than adjusting the specs file after installation ensures that the new dynamic linker is used during the actual build of GCC. That is, all of the binaries created during the build will link against the new Glibc. Issue:
+
+for file in \
+ $(find gcc/config -name linux64.h -o -name linux.h -o -name sysv4.h)
+do
+  cp -uv $file{,.orig}
+  sed -e 's@/lib\(64\)\?\(32\)\?/ld@/tools&@g' \
+  -e 's@/usr@/tools@g' $file.orig > $file
+  echo '
+#undef STANDARD_INCLUDE_DIR
+#define STANDARD_INCLUDE_DIR 0
+#define STANDARD_STARTFILE_PREFIX_1 ""
+#define STANDARD_STARTFILE_PREFIX_2 ""' >> $file
+  touch $file.orig
+done
+In case the above seems hard to follow, let's break it down a bit. First we find all the files under the gcc/config directory that are named either linux.h, linux64.h or sysv4.h. For each file found, we copy it to a file of the same name but with an added suffix of “.orig”. Then the first sed expression prepends “/tools” to every instance of “/lib/ld”, “/lib64/ld” or “/lib32/ld”, while the second one replaces hard-coded instances of “/usr”. Then we add our define statements which alter the include search path and the default startfile prefix to the end of the file. Finally, we use touch to update the timestamp on the copied files. When used in conjunction with cp -u, this prevents unexpected changes to the original files in case the commands are inadvertently run twice.
+
+On x86_64, unsetting the multilib spec for GCC ensures that it won't attempt to link against libraries on the host:
+
+case $(uname -m) in
+  x86_64)
+    for file in $(find gcc/config -name t-linux64) ; do \
+      cp -v $file{,.orig}
+      sed '/MULTILIB_OSDIRNAMES/d' $file.orig > $file
+    done
+  ;;
+esac
+Patch GCC to add -D_FORTIFY_SOURCE=2, -fPIE -pie, -fstack-protector-all, and --param=ssp-buffer-size=4 by default:
+
+patch -Np1 -i ../gcc-4.5.3-fortify_source-1.patch
+patch -Np1 -i ../gcc-4.5.3-fpie-1.patch
+patch -Np1 -i ../gcc-4.5.3-fstack_protector-1.patch
+As in the first build of GCC it requires the GMP, MPFR and MPC packages. Unpack the tarballs and move them into the required directory names:
+
+tar -jxf ../mpfr-3.0.0.tar.bz2
+mv -v mpfr-3.0.0 mpfr
+tar -jxf ../gmp-5.0.2.tar.bz2
+mv -v gmp-5.0.2 gmp
+tar -zxf ../mpc-0.8.2.tar.gz
+mv -v mpc-0.8.2 mpc
+Create a separate build directory again:
+
+mkdir -v ../gcc-build
+cd ../gcc-build
+Before starting to build GCC, remember to unset any environment variables that override the default optimization flags.
+
+Now prepare GCC for compilation:
+
+CC="$LFS_TGT-gcc -B/tools/lib/" \
+    AR=$LFS_TGT-ar RANLIB=$LFS_TGT-ranlib \
+    ../gcc-4.5.3/configure --prefix=/tools \
+    --with-local-prefix=/tools --enable-clocale=gnu \
+    --enable-shared --enable-threads=posix \
+    --enable-__cxa_atexit --enable-languages=c,c++ \
+    --disable-libstdcxx-pch --disable-multilib \
+    --disable-bootstrap --disable-libgomp \
+    --with-gmp-include=$(pwd)/gmp --with-gmp-lib=$(pwd)/gmp/.libs \
+    --without-ppl --without-cloog
+The meaning of the new configure options:
+
+--enable-clocale=gnu
+This option ensures the correct locale model is selected for the C++ libraries under all circumstances. If the configure script finds the de_DE locale installed, it will select the correct gnu locale model. However, if the de_DE locale is not installed, there is the risk of building Application Binary Interface (ABI)-incompatible C++ libraries because the incorrect generic locale model may be selected.
+
+--enable-threads=posix
+This enables C++ exception handling for multi-threaded code.
+
+--enable-__cxa_atexit
+This option allows use of __cxa_atexit, rather than atexit, to register C++ destructors for local statics and global objects. This option is essential for fully standards-compliant handling of destructors. It also affects the C++ ABI, and therefore results in C++ shared libraries and C++ programs that are interoperable with other Linux distributions.
+
+--enable-languages=c,c++
+This option ensures that both the C and C++ compilers are built.
+
+--disable-libstdcxx-pch
+Do not build the pre-compiled header (PCH) for libstdc++. It takes up a lot of space, and we have no use for it.
+
+--disable-bootstrap
+For native builds of GCC, the default is to do a "bootstrap" build. This does not just compile GCC, but compiles it several times. It uses the programs compiled in a first round to compile itself a second time, and then again a third time. The second and third iterations are compared to make sure it can reproduce itself flawlessly. This also implies that it was compiled correctly. However, the LFS build method should provide a solid compiler without the need to bootstrap each time.
+
+Compile the package:
+
+make
+Install the package:
+
+make install
+As a finishing touch, create a symlink. Many programs and scripts run cc instead of gcc, which is used to keep programs generic and therefore usable on all kinds of UNIX systems where the GNU C compiler is not always installed. Running cc leaves the system administrator free to decide which C compiler to install:
+
+ln -vs gcc /tools/bin/cc
+[Caution] Caution
+At this point, it is imperative to stop and ensure that the basic functions (compiling and linking) of the new toolchain are working as expected. To perform a sanity check, run the following commands:
+
+echo 'main(){}' > dummy.c
+cc dummy.c
+readelf -l a.out | grep ': /tools'
+If everything is working correctly, there should be no errors, and the output of the last command will be of the form:
+
+[Requesting program interpreter: /tools/lib/ld-linux.so.2]
+Note that /tools/lib, or /tools/lib64 for 64-bit machines appears as the prefix of the dynamic linker.
+
+If the output is not shown as above or there was no output at all, then something is wrong. Investigate and retrace the steps to find out where the problem is and correct it. This issue must be resolved before continuing on. First, perform the sanity check again, using gcc instead of cc. If this works, then the /tools/bin/cc symlink is missing. Install the symlink as per above. Next, ensure that the PATH is correct. This can be checked by running echo $PATH and verifying that /tools/bin is at the head of the list. If the PATH is wrong it could mean that you are not logged in as user lfs or that something went wrong back in Section 4.4, “Setting Up the Environment.”
+
+Once all is well, clean up the test files:
+
+rm -v dummy.c a.out
+Details on this package are located in Section 6.16.2, “Contents of GCC.”
+
+
+
+
+
+ ERROR: Command errored out with exit status 1:
+   command: /usr/bin/python3 -u -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'/tmp/pip-wheel-p50vd14f/sparse-dot-topn_093702ce02ef4544af1c60dccdc66948/setup.py'"'"'; __file__='"'"'/tmp/pip-wheel-p50vd14f/sparse-dot-topn_093702ce02ef4544af1c60dccdc66948/setup.py'"'"';f=getattr(tokenize, '"'"'open'"'"', open)(__file__);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' bdist_wheel -d /tmp/pip-wheel-hwwtd07c
+       cwd: /tmp/pip-wheel-p50vd14f/sparse-dot-topn_093702ce02ef4544af1c60dccdc66948/
+  Complete output (6 lines):
+  usage: setup.py [global_opts] cmd1 [cmd1_opts] [cmd2 [cmd2_opts] ...]
+     or: setup.py --help [cmd1 cmd2 ...]
+     or: setup.py --help-commands
+     or: setup.py cmd --help
+
+  error: invalid command 'bdist_wheel'
+  ----------------------------------------
+  ERROR: Failed building wheel for sparse-dot-topn
+  Running setup.py clean for sparse-dot-topn
+Failed to build sparse-dot-topn
+ERROR: Failed to build one or more wheels
