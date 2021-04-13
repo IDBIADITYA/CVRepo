@@ -1,6 +1,7 @@
 import cx_Oracle
 from dotenv import load_dotenv
-from db_utility import *
+from db_utility.connect import *
+import os
 db_creds = {
 				"username": os.getenv("username"),
 				"password": os.getenv("password"),
