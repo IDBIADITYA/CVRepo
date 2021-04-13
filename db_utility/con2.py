@@ -1,14 +1,31 @@
-import cx_Oracle
-#ip = '10.160.33.11'
-#port = 1521
-#SID = 'sysadm.PS_HRS_APP_RES'
-#dsn_tns = cx_Oracle.makedsn(ip, port, SID)
+from dotenv import load_dotenv, find_dotenv
+import os
+from db_utility.connect import *
 
-# You might get these via environment variable to make thing secure
-username = 'staqo'
-password = 'STAQO123'
 
-conn = cx_Oracle.connect(username, password, "10.160.33.11:1521/sysadm")
+def cred():
+    find_dotenv()
+    load_dotenv()
+    db_credentials = {"username": os.getenv("username"),
+                      "password": os.getenv("password"),
+                      "database": os.getenv("database"),
+                      "host": os.getenv("host"),
+                      "port": os.getenv("port")
+                      }
 
-print(conn.version)
-conn.close()
+    return db_credentials
+
+
+def database_est():
+    creds = cred()
+    Oracle(creds)
+    curr = Oracle.cursor
+    return curr
+
+
+def get_resume():
+    curr = database_est()
+
+
+
+get_resume()
