@@ -1,4 +1,4 @@
-from dotenv import load_dotenv, find_dotenv
+xfrom dotenv import load_dotenv, find_dotenv
 import os
 from db_utility.connect import *
 
