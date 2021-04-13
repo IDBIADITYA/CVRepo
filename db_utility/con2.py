@@ -8,7 +8,7 @@ import cx_Oracle
 username = 'staqo'
 password = 'STAQO123'
 
-conn = cx_Oracle.connect(username, password, "10.160.33.11/1521:sysadm")
+conn = cx_Oracle.connect(username, password, "10.160.33.11:1521/sysadm")
 
 print(conn.version)
 conn.close()
