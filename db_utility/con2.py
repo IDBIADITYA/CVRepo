@@ -1,7 +1,7 @@
 import cx_Oracle
 ip = '10.160.33.11'
 port = 1521
-SID = 'specify_sid_or_schema'
+SID = 'sysadm.PS_HRS_APP_RES'
 dsn_tns = cx_Oracle.makedsn(ip, port, SID)
 
 # You might get these via environment variable to make thing secure
